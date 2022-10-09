@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
 
-const Podcast = () => {
+import "./podcast.scss";
+
+const Podcast = ({ img, title, subtitle }) => {
   return (
-    <div>Podcast</div>
-  )
-}
+    <div className="podcast-item">
+      <div className="image-wrapper">
+        <img src={img || ""} alt="" />
+      </div>
+      <div className="content">
+        <h5>{title}</h5>
+        <p>{subtitle}</p>
+      </div>
+    </div>
+  );
+};
 
-export default Podcast
+export default Podcast;

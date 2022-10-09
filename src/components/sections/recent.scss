@@ -11,4 +11,18 @@
       color: #f25c2a;
     }
   }
+
+  .podcast-overall {
+    overflow-x: auto;
+
+    .podcast-list {
+      display: flex;
+      gap: 19px;
+      min-width: fit-content;
+
+      @media only screen and (min-width: 1480px) {
+        gap: 29px;
+      }
+    }
+  }
 }
