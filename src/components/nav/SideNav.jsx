@@ -11,7 +11,10 @@ const SideNav = () => {
           <h5>{item.title}</h5>
           <div className="links">
             {item.children.map(({ icon: Icon, title }, key) => (
-              <div className="link" key={key}>
+              <div
+                className={`link${title === 'Home' ? " active" : ""}`}
+                key={key}
+              >
                 <Icon />
                 <p>{title}</p>
               </div>
